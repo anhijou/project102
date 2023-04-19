@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">groupe</th>
+        <th scope="col">Action</th>
+        
+      </tr>
+    </thead>
+    <tbody *ngFor="let student of listStudent">
+      <tr>
+        
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.groupe}}</td>
+        <td>
+            <button (click)="deleteStudent(student.id)">delete</button>
+            <button>ajoute</button>
+            <button>update</button>
+        </td>
+
+      </tr>
+      
+    </tbody>
+  </table>
